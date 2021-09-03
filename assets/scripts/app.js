@@ -254,7 +254,7 @@ class ProjectMoverHelper {
         ele.scrollIntoView({ behavior: "smooth" })
     }
     static createNewProj() {
-        this.renderedProjs.actives.addProj('macecha', 'asdfadsfaf', 'rofl', this.renderedProjs.activeRenderHook)
+        this.renderedProjs.actives.addProj('GitHub', 'Commit this to GH', 'nothin', this.renderedProjs.activeRenderHook)
     }
     static toolTipHelper(ele) {
         new Tooltip(ele)
