@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  min-height: 99vh;
+}
+
+#main-header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff0062;
+}
+
+#main-header h1 {
+  color: white;
+  margin: 0;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+} */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+section {
+  margin: 1rem auto;
+  width: 40rem;
+  max-width: 90%;
+}
+
+section ul {
+  padding: 1rem;
+  max-height: 20rem;
+  overflow: scroll;
+}
+
+section > h2 {
+  color: white;
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  background: #ff0062;
+  color: white;
+  border: 1px solid #ff0062;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+button.alt {
+  background: white;
+  color: #ff0062;
+  margin-right: 5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #ff2579;
+  border-color: #ff2579;
+  color: white;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  background: white;
+}
+
+#active-projects {
+  border: 1px solid #870099;
+}
+
+#active-projects > header {
+  background: #870099;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#active-projects header h2 {
+  color: white;
+  margin: 0;
+}
+
+#finished-projects {
+  border: 1px solid #535353;
+}
+
+#finished-projects > header {
+  background: #535353;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#finished-projects header h2 {
+  color: white;
+  margin: 0;
+}
+
+
+
+body::after {
+  content: '';
+  display: block;
+  height: 4rem; 
+}
+
+#dadJoke {
+  background-color: rgb(139, 18, 18);
+  height: 4.2rem;
+  width: 100%;
+  position: absolute;
+  bottom: -11px;
+}
+
+.fcont {
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-size: 3rem;
+  border-top: 1px solid #f3a775;
+  border-left: 1px solid #f3a775;
+  border-right: 1px solid #f3a775;
+  border-radius: 3px;
+  padding: 0.1rem;
+  position: absolute;
+  bottom: 0px;
+  left: 48vw;
+  height: 4rem;
+  transition: all 0.5s ease ;
+  color: #f3a775;
+}
+
+.fcont:hover {
+  text-shadow: 5px -1px 2px #f3a775;
+  box-shadow: 0 -2px 11px 1px #f3a775;
+}
+
+#dadJokeCont {
+  font-size: 1.5rem;
+  margin-top: 0.7rem;
+  margin-left: 10rem;
+  display: inline-block;
+}
+
+.cardsm {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  background: white;
+  font-size: 1.3rem;
+}
