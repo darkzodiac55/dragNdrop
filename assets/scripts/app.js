@@ -1,7 +1,7 @@
-import { ProjectMoverHelper } from "./Utils/ProjectMoverHelper.js";
+import { ProjectMoverHelper as AppInitializer} from "./Utils/ProjectMoverHelper.js";
 
-ProjectMoverHelper.initAll()
-ProjectMoverHelper.createNewProj()
+AppInitializer.initAll()
+AppInitializer.createNewProj()
 
 
 

@@ -1,10 +1,9 @@
-import {ProjectPages} from "../App/ProjectPages.js";
-import { Tooltip } from "./Tooltip.js";
+import ProjectPages from "../App/ProjectPages.js"; //import def export
+/* import Tooltip from "./Tooltip.js"; */
 
 export class ProjectMoverHelper {
     static initAll() {
         this.renderedProjs = new ProjectPages()
-        console.log('ran');
     }
     static showArr() {
         console.log(this.renderedActives.activeArr);
@@ -22,8 +21,9 @@ export class ProjectMoverHelper {
     static createNewProj() {
         this.renderedProjs.actives.addProj('GitHub', 'Commit this to GH', 'nothin', this.renderedProjs.activeRenderHook)
     }
-    static toolTipHelper(ele) {
-        new Tooltip(ele)
+    static async toolTipHelper(ele) {
+        let module = await import('./Tooltip.js');  ///dynamic import, is a promise
+        new module.Tooltip(ele)
     }
     static toolTipRemover(ele) {
         let tt = ele.querySelector('.card')
