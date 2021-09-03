@@ -1,4 +1,4 @@
-class DadjokeTooltip {
+export class DadjokeTooltip {
     constructor() {
         this.addLis()
     }

@@ -1,4 +1,4 @@
-class Tooltip {
+export class Tooltip {
     constructor(element) {
         this.parentElement = element
         this.render()

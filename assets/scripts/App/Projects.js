@@ -1,4 +1,6 @@
-class Projects {
+import { ProjectMoverHelper } from "../Utils/ProjectMoverHelper.js";
+
+export class Projects {
     reRerenderProjs(renderHook) {
         for (const proj of this.projArr) {
             renderHook.append(proj.render())

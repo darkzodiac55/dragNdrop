@@ -1,6 +1,10 @@
-class ProjectMoverHelper {
+import {ProjectPages} from "../App/ProjectPages.js";
+import { Tooltip } from "./Tooltip.js";
+
+export class ProjectMoverHelper {
     static initAll() {
         this.renderedProjs = new ProjectPages()
+        console.log('ran');
     }
     static showArr() {
         console.log(this.renderedActives.activeArr);
@@ -30,6 +34,5 @@ class ProjectMoverHelper {
     }
 }
 
-ProjectMoverHelper.initAll()
-ProjectMoverHelper.createNewProj()
+
 

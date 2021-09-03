@@ -18,7 +18,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ff0062;
+  background: #7b4397;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dc2430, #7b4397);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
 }
 
 #main-header h1 {
@@ -56,7 +63,7 @@ section ul {
   overflow: scroll;
 }
 
-section > h2 {
+section>h2 {
   color: white;
   margin: 0;
 }
@@ -80,8 +87,7 @@ button:focus {
   outline: none;
 }
 
-button:hover,
-button:active {
+button:hover, button:active {
   background: #ff2579;
   border-color: #ff2579;
   color: white;
@@ -98,7 +104,7 @@ button:active {
   border: 1px solid #870099;
 }
 
-#active-projects > header {
+#active-projects>header {
   background: #870099;
   padding: 1rem;
   display: flex;
@@ -112,11 +118,17 @@ button:active {
 }
 
 #finished-projects {
-  border: 1px solid #535353;
+  border: 1px solid #a8ff78;
 }
 
-#finished-projects > header {
-  background: #535353;
+#finished-projects>header {
+  /* background: #535353; */
+  background: #a8ff78;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #78ffd6, #a8ff78);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #78ffd6, #a8ff78);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -124,20 +136,23 @@ button:active {
 }
 
 #finished-projects header h2 {
-  color: white;
+  color: #276406;
   margin: 0;
 }
-
-
 
 body::after {
   content: '';
   display: block;
-  height: 4rem; 
+  height: 4rem;
 }
 
 #dadJoke {
-  background-color: rgb(139, 18, 18);
+  background: #7b4397;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #dc2430, #7b4397);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #dc2430, #7b4397);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 4.2rem;
   width: 100%;
   position: absolute;
@@ -147,22 +162,22 @@ body::after {
 .fcont {
   font-family: 'Zen Tokyo Zoo', cursive;
   font-size: 3rem;
-  border-top: 1px solid #f3a775;
-  border-left: 1px solid #f3a775;
-  border-right: 1px solid #f3a775;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   border-radius: 3px;
   padding: 0.1rem;
   position: absolute;
   bottom: 0px;
   left: 48vw;
   height: 4rem;
-  transition: all 0.5s ease ;
-  color: #f3a775;
+  transition: all 0.5s ease;
+  color: white;
 }
 
 .fcont:hover {
-  text-shadow: 5px -1px 2px #f3a775;
-  box-shadow: 0 -2px 11px 1px #f3a775;
+  text-shadow: 5px -1px 2px white;
+  box-shadow: 0 -2px 11px 1px white;
 }
 
 #dadJokeCont {

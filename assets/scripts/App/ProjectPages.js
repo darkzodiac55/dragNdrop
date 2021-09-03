@@ -1,4 +1,8 @@
-class ProjectPages {
+import { ActiveProjects } from "./ActiveProjects.js";
+import { FinishedProjects } from "./FinishedProjects.js";
+import { DadjokeTooltip } from "../Utils/DadJokeTooltip.js";
+
+export class ProjectPages {
     static activeArr
 
     constructor() {

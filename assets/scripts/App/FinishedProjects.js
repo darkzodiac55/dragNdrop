@@ -1,4 +1,7 @@
-class FinishedProjects extends Projects {
+import { Projects } from "./Projects.js";
+import { ProjectElement } from "./ProjectElement.js";
+
+export class FinishedProjects extends Projects {
     constructor() {
         super()
         this.removeTTlistener()

@@ -1,4 +1,6 @@
-class ProjectElement {
+import { ProjectMoverHelper } from "../Utils/ProjectMoverHelper.js";
+
+export class ProjectElement {
     constructor(title, text, extraInfo, btnText = 'Finish') {
         this.title = title
         this.text = text
