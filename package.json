@@ -1,0 +1,19 @@
+{
+  "name": "dragndrop",
+  "version": "1.0.0",
+  "description": "ES6 module and class based drag and drop example built using webpack.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkzodiac55/dragNdrop.git"
+  },
+  "author": "Igor Gajdac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkzodiac55/dragNdrop/issues"
+  },
+  "homepage": "https://github.com/darkzodiac55/dragNdrop#readme"
+}
