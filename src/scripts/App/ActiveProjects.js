@@ -17,7 +17,9 @@ export class ActiveProjects extends Projects {
     addProj(title, text, extraInfo, hook) {
         let nProj = new ProjectElement(title, text, extraInfo)
         this.projArr.push(nProj)
-        hook.prepend(nProj.render())
+        let nProjEle = nProj.render()
+        hook.prepend(nProjEle)
+        nProjEle.scrollIntoView({ behavior: "smooth" })
     }
 
 }
