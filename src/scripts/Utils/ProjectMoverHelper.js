@@ -18,8 +18,8 @@ export class ProjectMoverHelper {
         ele.children[3].innerText = 'Finish'
         ele.scrollIntoView({ behavior: "smooth" })
     }
-    static createNewProj() {
-        this.renderedProjs.actives.addProj('GitHub', 'Commit this to GH', 'nothin', this.renderedProjs.activeRenderHook)
+    static createNewProj(title,info,extra) {
+        this.renderedProjs.actives.addProj(title, info, extra, this.renderedProjs.activeRenderHook)
     }
     static async toolTipHelper(ele) {
         let module = await import('./Tooltip.js');  ///dynamic import, is a promise

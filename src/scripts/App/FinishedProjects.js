@@ -9,7 +9,7 @@ export class FinishedProjects extends Projects {
     }
     id = document.querySelector('#finished-projects ul')
     projArr = [
-        new ProjectElement('Book Hotel', "Academind conference takes place in December, don't forget to book a hotel.", "Super important conference! Fictional but still!",
+        new ProjectElement('Clean up', "Vacuum the apartment", "Lot of dust!",
             'Activate'),
 
     ]

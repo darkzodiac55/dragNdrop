@@ -1,6 +1,6 @@
 import { ActiveProjects } from "./ActiveProjects.js";
 import { FinishedProjects } from "./FinishedProjects.js";
-import { DadjokeTooltip } from "../Utils/DadJokeTooltip.js";
+import NewProjectCreator from "../Utils/NewProject.js";
 
 export default class ProjectPages {
     static activeArr
@@ -8,7 +8,7 @@ export default class ProjectPages {
     constructor() {
         this.initActive()
         this.initFinished()
-        this.initDadJoke()
+        this.initCreator()
     }
     initActive() {
         this.actives = new ActiveProjects()
@@ -25,8 +25,8 @@ export default class ProjectPages {
 
 
     }
-    initDadJoke() {
-        this.joke = new DadjokeTooltip()
+    initCreator() {
+        this.creator = new NewProjectCreator()
     }
 
 }
