@@ -236,7 +236,6 @@ form input {
   padding-bottom: -1rem;
   font-family: 'Pacifico', cursive;
   font-weight: lighter;
-  
 }
 
 .hidden {
@@ -257,11 +256,33 @@ form input {
   animation: fade-slide-in 0.3s ease-out forwards;
 }
 
+#gh {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  bottom: 100px;
+  left: 1%;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
 @keyframes fade-slide-in {
   from {
     transform: translateY(20rem);
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.90);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.90);
   }
 }
