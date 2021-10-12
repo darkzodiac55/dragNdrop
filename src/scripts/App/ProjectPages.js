@@ -1,6 +1,7 @@
 import { ActiveProjects } from "./ActiveProjects.js";
 import { FinishedProjects } from "./FinishedProjects.js";
 import NewProjectCreator from "../Utils/NewProject.js";
+import ReadmePopup from "../Utils/ReadmePopup.js";
 
 export default class ProjectPages {
     static activeArr
@@ -9,6 +10,7 @@ export default class ProjectPages {
         this.initActive()
         this.initFinished()
         this.initCreator()
+        this.initReadme()
     }
     initActive() {
         this.actives = new ActiveProjects()
@@ -27,6 +29,9 @@ export default class ProjectPages {
     }
     initCreator() {
         this.creator = new NewProjectCreator()
+    }
+    initReadme() {
+        this.readme = new ReadmePopup()
     }
 
 }

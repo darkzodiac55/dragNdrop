@@ -239,7 +239,7 @@ form input {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 #hider {
@@ -264,6 +264,40 @@ form input {
   left: 1%;
   transform: scale(1);
   animation: pulse 2s infinite;
+}
+
+#readme {
+  width: 60vw;
+  height: 70vh;
+  background-color: rgba(56, 51, 51, 0.959);
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 20vh;
+  z-index: 1000;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  color: yellow;
+  padding: 3rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.xer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 3.2rem;
+  cursor: pointer;
 }
 
 @keyframes fade-slide-in {
